@@ -19,6 +19,9 @@ class Goodbye extends React.Component {
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <BrowserRouter>
+      <Route path="/hello" component={Hello} />
+      <Route path="/goodbye" component={Goodbye} />
+    </BrowserRouter>
   </Provider>
   , document.querySelector('.container'));

@@ -12,4 +12,4 @@ class PostsIndex extends Component {
   }
 }
 
-export default PostsIndex;
+export default connect(null, { fetchPosts }) PostsIndex;

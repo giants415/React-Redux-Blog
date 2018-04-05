@@ -12,6 +12,7 @@ class PostsNew extends Component {
           type="text"
           {...field.input}
         />
+      {field.meta.error}
       </div>
     );
   }
@@ -48,10 +49,10 @@ function validate(values) {
     errors.title = "Enter a title that is at least 3 characters!";
   }
   if (!values.categories) {
-    errors.title = "Enter some categories!";
+    errors.categories = "Enter some categories!";
   }
   if (!values.content) {
-    errors.title = "Enter some content!";
+    errors.content = "Enter some content!";
   }
 
   // If errors is empty, form is fine to submit

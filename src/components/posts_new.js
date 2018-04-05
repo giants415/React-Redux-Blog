@@ -40,8 +40,12 @@ class PostsNew extends Component {
   }
 }
 
-function validate() {
+function validate(values) {
+  const errors = {};
 
+  // Validate the inputs from 'values'
+
+  return errors;
 }
 
 export default reduxForm({

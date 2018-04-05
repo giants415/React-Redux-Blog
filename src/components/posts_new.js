@@ -45,6 +45,9 @@ function validate(values) {
 
   // Validate the inputs from 'values'
 
+
+  // If errors is empty, form is fine to submit
+  // If errors has *any* properties, redux form assumes form is invalid
   return errors;
 }
 

@@ -13,7 +13,11 @@ class PostsNew extends Component {
           {...field.input}
         />
       </div>
-    )
+    );
+  }
+
+  renderTagsField(field) {
+
   }
 
   render() {
@@ -22,6 +26,10 @@ class PostsNew extends Component {
         <Field
           name="title"
           component={this.renderTitleField}
+        />
+        <Field
+          name="tags"
+          component={this.renderTagsField}
         />
       </form>
     )

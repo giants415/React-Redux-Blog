@@ -44,7 +44,15 @@ function validate(values) {
   const errors = {};
 
   // Validate the inputs from 'values'
-
+  if (!values.title || values.title.length < 3) {
+    errors.title = "Enter a title that is at least 3 characters!";
+  }
+  if (!values.categories) {
+    errors.title = "Enter some categories!";
+  }
+  if (!values.content) {
+    errors.title = "Enter some content!";
+  }
 
   // If errors is empty, form is fine to submit
   // If errors has *any* properties, redux form assumes form is invalid

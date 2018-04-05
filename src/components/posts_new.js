@@ -5,9 +5,12 @@ import { Field, reduxForm } from 'redux-form';
 class PostsNew extends Component {
   render() {
     return (
-      <div>
-        Posts New!
-      </div>
+      <form>
+        <Field
+          name="title"
+          component={}
+        />
+      </form>
     )
   }
 }

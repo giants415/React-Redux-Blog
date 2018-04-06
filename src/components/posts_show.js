@@ -9,9 +9,11 @@ class PostsShow extends Component {
   }
 
   render() {
+    const { post } = this.props;
+
     return(
       <div>
-        Posts Show!
+        
       </div>
     );
   }

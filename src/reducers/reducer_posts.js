@@ -8,6 +8,7 @@ export default function(state = {}, action) {
       // const newState =  { ...state };
       // newState[post.id] = post;
       // return newState;
+      
       return { ...state, [action.payload.data.id]: action.payload.data };
     case FETCH_POSTS:
       return _.mapKeys(action.payload.data, 'id');

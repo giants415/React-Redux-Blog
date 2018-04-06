@@ -4,6 +4,8 @@ import { Field, reduxForm } from 'redux-form';
 
 class PostsNew extends Component {
   renderField(field) {
+    const className = `form-group ${field.meta.touched && field.meta.error ? 'has-danger' : ''}`;
+
     return (
       <div className="form-group has-danger">
         <label>{field.label}</label>
